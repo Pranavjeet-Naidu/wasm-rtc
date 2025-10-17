@@ -1,11 +1,11 @@
 mod cipher;
-use cipher:Hello;
+use cipher::Hello;
 use sycamore::prelude::*;
 
 #[component]
 fn App<G: Html>(cx: Scope) -> View<G> {
-    let name = create_signal(cx, String:new());
-    let hello_r = cipher:new_hello();
+    let name = create_signal(cx, String::new());
+    let hello_r = cipher::new_hello();
     let displayed_name = || {
         if name.get().is_empty(){
             "".to_string()

@@ -1,7 +1,7 @@
 use std::fmt::Display;
 
 pub struct Hello{
-    name: String;
+    name: String,
 }
 
 pub fn new_hello() -> Hello{
