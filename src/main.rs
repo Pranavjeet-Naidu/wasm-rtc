@@ -16,7 +16,7 @@ fn App<G: Html>(cx: Scope) -> View<G> {
 
     view! { cx,
         div{
-            h2{ "Test : Real time vigenere cipher" }
+            h2{ "Test : rtvc" }
             p{ input(placeholder="Enter a phrase", bind:value=name)}
             p{strong{"Key: "}(displayed_name())}
             p{strong{"Encrypted: "}(displayed_name())}
