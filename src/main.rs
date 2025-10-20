@@ -1,5 +1,4 @@
 mod cipher;
-use cipher::Hello;
 use sycamore::prelude::*;
 
 #[component]
